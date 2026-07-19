@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="images/favicon.png">
+      <title>1.3: Document Structure (Boilerplate)</title>
+</head>
+
+<body>
+      
+<h1><u>1.3 : Document Structure (Boilerplate)</u></h1>
+<p>Boilerplate ဆိုတာ အိမ်တစ်လုံး ဆောက်တဲ့အခါ မဖြစ်မနေလိုအပ်တဲ့ အုတ်မြစ် (Foundation) လိုပါပဲ။သူ့မှာ မဖြစ်မနေပါရမယ့် ဖွဲ့စည်းပုံတွေရှိပါတယ်။ Html ဖိုင်တစ်ခု စရေးရင် ဘာမှ မရေးခင် ဒီ Structure ကို အရင်ချရေးရပါတယ်။<br>
+<b>structure ပုံစံ -</b><br>
+</p>
+
+<div style="background-color:lightgray;" >
+<pre><code>
+&lt!DOCTYPE html&gt;
+&lt;html lang=&quot;my&quot;&gt;
+
+&lt;head&gt;
+      &lt;meta charset=&quot;UTF-8&quot;&gt;
+      &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+      &lt;title&gt;Page title&lt;/title&gt;
+      &lt;link rel=&quot;icon&quot; href=&quot;images/favicon.png&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+      &lt;!-- ဒါကတော့ note ပါ --&gt;
+      &lt;p&gt;ဒါက Structure ပုံစံဖြစ်ပါတယ်&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre></div>
+<p> အပေါ်က Structure code ကို တစ်ကြောင်းချင်း ကြည့်လိုက်ရင် ဒါတွေကို တွေ့ရပါမယ်။ - <br>
+· &lt;!DOCTYPE html&gt; <br>
+· &lt;html lang=&quot;my&quot;&gt;<br>
+· &lt;head&gt; Tag<br>
+· &lt;body&gt; body Tag</p>
+<hr>
+
+<h2><u>A. &lt;!DOCTYPE html&gt; (စာမျက်နှာအမျိုးအစား သတ်မှတ်ခြင်း)</u></h2>
+<p>ဒီစာကြောင်းဟာ HTML ရဲ့ ထိပ်ဆုံးစာကြောင်း ဖြစ်ရပါမယ်။<br>
+သူ့ရဲ့အဓိပ္ပါယ်ကတော့ ဒီဖိုင်ဟာ HTML-5 နဲ့ရေးထားတယ် လို့ browser ကိုပြောတာပါ။<br>
+တကယ်လို့ ဒီစာကြောင်း မပါရင် browser က &quot;Quirks Mode&quot; ဆိုတဲ့ ရှေးဟောင်းပုံစံနဲ့ ဒီဖိုင်ကို ဖွင့်တဲ့အတွက်  website က ရှုပ်သွားနိုင်ပါတယ်။</p>
+<br>
+
+
+<hr>
+
+<h2><u>B. &lt;html lang=&quot;my&quot;&gt; (ဘာသာစကားသတ်မှတ်ခြင်း)</u></h2>
+<p>
+   HTML ဖိုင်ရဲ့ သွေးကြောလို့တောင် တင်စားကြပါတယ်။<br>  
+   ဒီ Tag က ဒီ Webpage  မှာ ဘယ်ဘာသာစကားကို  အဓိက သုံးထားတယ် ဆိုတာကို ပြောပြတာပါ။<br> lang=&quot;my&quot; လို့ရေးထားတဲ့အတွက် ဒီ webpage က မြန်မာဘသာ နဲ့ရေးထားတဲ့စာတွေမှန်း browser နဲ့ Screen reader တွေ ကို သိစေပါတယ်။<br> SEO (Search Engine) နဲ့ Accessibility (မျက်မမြင်စာဖတ်ကိရိယာ) အတွက် အရမ်းအရေးကြီးပါတယ်။
+</p>
+<br>
+
+
+<hr>
+
+<h2><u>C. &lt;head&gt; Tag(နောက်ကွယ်က အချက်အလက်များ)</u></h2>
+<p>head Tag ဆိုတာ HTML ဖိုင်ရဲ့ ဦးနောက်ပိုင်း ဖြစ်ပါတယ်။<br>ဒီထဲမှာ ထဲမှာရေးတဲ့ အကြောင်းအရာတွေက စာမျက်နှာပေါ်မှာ တိုက်ရိုက်မပါဘူး။ ဒါပေမယ့် Browser အတွက် ညွှန်ကြားချက်တွေ၊ Meta Data တွေကိုပဲ ရေးရပါမယ်။</p>
+<h3><u>i. &lt;meta charset=&quot;UTF-8&quot;&gt; (စာလုံးကုဒ်သတ်မှတ်ခြင်း)</u></h3>
+<p>head tag ထဲမှာ ပထမဆုံး ထားရမယ့် tag ဖြစ်ပါတယ်။<br>UTF-8 ဆိုတာ ကမ္ဘာသုံး ယူနီကုဒ် (Unicode) စံနှုန်းပါ။<br>
+မြန်မာလို၊ အင်္ဂလိပ်လို၊ ဂျပန်လိုစတဲ့ ကမ္ဘာ့ဘာသာစကားအကုန်လုံးကို မှန်မှန်ကန်ကန်ပြဖို့ သတ်မှတ်ပေးတာဖြစ်ပါတယ်။<br>
+ဒီစာကြောင်း မရေးထားရင် မြန်မာတွေ မမှန်တော့တာတွေ၊ မပြတော့တာတွေဖြစ်နိုင်ပါတယ်။</p>
+<h3><u>ii. &lt;meta name=gquot;viewport&quot; cont....&gt;</u></h3>
+<p>ဒီ tag ကတော့ ဒီ website ကို Device မျိုးစုံမှာ အဆင်ပြေပြေ နဲ့ဖွင့်လို့ရအောင် ရေးထားတဲ့ code ပါ။<br>ဒီ code မရေးထားရင် ဖုန်းမှာ ဖွင့်ရင် တစ်မျိုး၊ tableမှာဖွင့်ရင် တစ်မျိုး ဖြစ်‌ပြီး အချိုးမကျဘဲ ပုံပျက်နေမှာပါ။</p>
+<br>
+<h3><u>iii. &lt;title&gt; – Browser Tab ခေါင်းစဉ်</u></h3>
+<p>ဒါက Browser Tab မှာ ပြတဲ့ ခေါင်းစဉ်ပါ။ Google Search Result မှာလည်း ဒီခေါင်းစဉ်ကိုပဲ ပြလေ့ရှိတယ်။</p>
+<h3><u>iv. &lt;link rel=&quot;icon....(Favicon ထည့်ခြင်း)</u></h3>
+<p>Favicon ဆိုတာ Browser Tab မှာ ခေါင်းစဉ်ဘေးမှာ ပါတဲ့ icon သေးသေးလေးပါ။<br> ဒါက Website ကို ပိုပြီးအထာကျအောင်လုပ်ထားတာပါ - </p>
+<img src="images/wikipedia_favicon.png" alt="Wikipedia-favicon" hight="350" width="350"></img>
+
+
+<hr>
+
+<h2><u>D. &lt;body&gt; Tag (user ကို မြင်ရမယ့်အပိုင်း)</u></h2>
+<p>body Tag ထဲမှာ ရေးသမျှအကုန်လုံးက Browser မျက်နှာပြင်ပေါ်မှာ ပြသမယ့် အကြောင်းအရာ ပါ။<br> 
+ဒါကြောင့် ဒီနေရာမှာ ခေါင်းစဉ်၊ စာပိုဒ်၊ ပုံ၊ ခလုတ် စတာတွေ ရေးရပါမယ်။<br>
+<b>ဥပမာ - </b><br>
+<div style="background-color:lightgray;"><pre><code>
+&lt;body&gt;  
+      &lt;p&gt;ဒါက Structure ပုံစံဖြစ်ပါတယ်&lt;/p&gt; <p style="color:green;">
+      &lt;!-- ဒီနေရာမှာ ထည့်ချင်တာ ထပ်ထည့် --&gt;</p>
+&lt;/body&gt;
+      </code></pre></div>
+ <p style="color:green;">
+      &lt;!-- ဒီနေရာမှာ ထည့်ချင်တာ ထပ်ထည့် --&gt;</p> လို့ရေးထားတာက code ဖတ်တဲ့ အချိန် နားလည်စေရန် ရေးထားခြင်းဖြစ်ပါတယ်။ ဒီ tag ကို user လည်း မမြင်ရသလို browser ကလည်း မဖတ်ပါဘူး။မှတ်စု ရေးထားရုံသက်သက် ဖြစ်ပါတယ်။
+</p>
+<hr>
+<b>&copy;1.3 ပြီးပါပြီ</b>
+</body>
+</html>

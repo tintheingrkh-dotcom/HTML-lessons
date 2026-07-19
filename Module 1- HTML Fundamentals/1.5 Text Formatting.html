@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="my">
+      
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="images/favicon.png">
+      <title>1.5:Text Formatting</title>
+</head>
+
+<body>
+      <h1><u>1.5: Text Formatting (စာသားပုံစံအမျိုးမျိုးနှင့် အသုံးပြုပုံ)</u></h1>
+      <p>HTML မှာ စာသားတွေကို ပုံစံအမျိုးမျိုးနဲ့ ပြင်ဆင်လို့ရပါတယ်။ ဒါပေမယ့် အဓိကက ဘယ်အချိန်မှာ ဘယ် Tag ကိုသုံးရမလဲ ဆိုတာကို သိထားသင့်ပါတယ်။<br>
+• Bold (&lt;b&gt;, &lt;strong&gt;) နဲ့ Italic (&lt;i&gt;, &lt;em&gt;) – ကွာခြားချက်နဲ့ ဘယ်ဟာကိုသုံးသင့်လဲ<br>
+• Highlight (&lt;mark&gt;) – စာသား Hightlight ထိုးခြင်း<br>
+• Underline (&lt;u&gt;) နဲ့ Strikethrough (&lt;s&gt;) – အောက်မျဉ်းနဲ့ ဖြတ်မျည်း<br>
+• Subscript (&lt;sub&gt;) နဲ့ Superscript (&lt;sup&gt;) – သိပ္ပံနဲ့ သင်္ချာအတွက် </p>
+      <hr>
+
+<h2><u>A. Bold (စာလုံးထူ) – &lt;b&gt; vs &lt;strong&gt;</u></h2>
+<p>ဒီ Tag နှစ်ခုလုံးက စာလုံးကို ထူထူ (Bold) ပြဖို့သုံးတယ်။ ဒါပေမယ့် ဘယ်ဟာက ပိုပြီးကောင်းလဲ ဆိုတာ အတိအကျသိထားရမယ်။<br>
+• <b>&lt;b&gt; Tag :</b> Non-semantic (အဓိပ္ပာယ်မပါ) – ပုံပန်းသဏ္ဍာန်အတွက်ပဲ။ စာအုပ်တစ်အုပ်ထဲက စာလုံးထူ လိုမျိုး အလှဆင်ချင်ရင် သုံးပါတယ်။<br>
+• <b>&lt;strong&gt; Tag :</b> Semantic (အဓိပ္ပာယ်ပါ) – "ဒီစာက အရမ်းအရေးကြီးတယ်" လို့ Browser/Google ကိုပြောတယ်။ သတိပေးချက်တွေ၊ သုံးစွဲသူသိစေချင်တဲ့ အရေးကြီးအချက်တွေ။ Screen Reader က အသံကိုပြောင်းပြီးဖတ်ပေးမယ်။</p>
+<p><b>ဥပမာ - </b></p>
+<div style="background-color: lightgray;padding:10px;"><pre><code>
+&lt;p&gt;
+    &lt;b&gt;မှတ်ချက်:&lt;/b&gt; (ဒါက အလှဆင်ရုံပါ)
+    &lt;strong&gt;သတိပေးချက်:&lt;/strong&gt; ဒီနေရာမှာ ကားရပ်မထားပါနဲ့။ (ဒါက အရေးပါတယ်)
+&lt;/p&gt;
+</code></pre></div>
+<p><b>ရလာဒ် - </b></p>
+<div style="background-color: lightgray;padding:10px;"><pre><code>
+<p><b>မှတ်ချက်:</b> (ဒါက အလှဆင်ရုံပါ)<br><strong>သတိပေးချက်:</strong> ဒီနေရာမှာ ကားရပ်မထားပါနဲ့။ (ဒါက အရေးပါတယ်)</p>
+</code></pre></div>
+<p><b>အကြံပြုချက် – </b> အတတ်နိုင်ဆုံး &lt;strong&gt; ကို သုံးပါ။ &lt;b&gt; ကို အများကြီးမသုံးပါနဲ့။</p>
+<hr>
+
+<h2><u>B. Italic (စာလုံးစောင်း) – &lt;i&gt; vs &lt;em&gt;</u></h2>
+<p>ဒီနှစ်ခုလုံးက စာလုံးကို စောင်းစောင်း (Italic) ပြဖို့သုံးတယ်။<br>
+• <b>&lt;i&gt; Tag :</b> Non-semantic (အဓိပ္ပာယ်မပါ) – ပုံပန်းသဏ္ဍာန်အတွက်ပဲ။ နိုင်ငံခြားစကားလုံး၊ သိပ္ပံအမည်၊ စာအုပ်နာမည်တွေမှာ သုံးတယ်။ (ဥပမာ – Harry Potter)<br>
+• <b>&lt;em&gt; Tag :</b> Semantic (အဓိပ္ပာယ်ပါ) – "ဒီစာကို အလေးပေးဖတ်ပါ" လို့ပြောတယ်။ စာကြောင်းထဲမှာ တစ်ခုခုကို အထူးအလေးပေးချင်ရင်။ Screen Reader က ဒီစာကို အသံအနိမ့်အမြင့်နဲ့ ဖတ်ပေးမယ်။</p>
+<p><b>ဥပမာ - </b></p>
+<div style="background-color: lightgray;padding:10px;"><pre><code>
+&lt;p&gt;
+    ကျွန်တော် &lt;i&gt;ဟယ်ရီပေါ်တာ&lt;/i&gt; စာအုပ်ကို ဖတ်နေတယ်။ (စာအုပ်နာမည်)
+    &lt;em&gt;ကျေးဇူးပြု၍ တံခါးကိုပိတ်ပါ။&lt;/em&gt; (အလေးပေးပြောချက်)
+&lt;/p&gt;
+</code></pre></div>
+<p><b>ရလာဒ် - </b></p>
+<div style="background-color: lightgray;padding:10px;"><pre><code>
+<p>ကျွန်တော် <i>ဟယ်ရီပေါ်တာ</i> စာအုပ်ကို ဖတ်နေတယ်။ (စာအုပ်နာမည်) <br><em>ကျေးဇူးပြု၍ တံခါးကိုပိတ်ပါ။</em> (အလေးပေးပြောချက်)</p>
+</code></pre></div>
+<p><b>အကြံပြုချက် – </b> အလေးပေးချင်ရင် &lt;em&gt; ကို သုံးပါ။ စာပေအမည်၊ နိုင်ငံခြားစာလုံးတွေအတွက် &lt;i&gt; ကိုသုံးပါ။</p>
+<hr>
+
+<h2><u>C. Highlight (Hightlight မှတ်ခြင်း) – &lt;mark&gt; Tag</u></h2>
+<p>ဒါက စာသားကို အဝါရောင် Hightlight မှတ်ထား သလိုမျိုး ပေါ်လွင်အောင်လုပ်တယ်။ ဒါက Semantic ပါ။ "ဒီစာက ဆက်စပ်မှုရှိတယ်" လို့ ဆိုလိုတယ်။</p>
+<p><b>ဥပမာ - </b></p>
+<div style="background-color: lightgray;padding:10px;"><pre><code>
+&lt;p&gt;ဒီနေ့ ရာသီဥတုက &lt;mark&gt;အရမ်းပူတယ်&lt;/mark&gt;၊ ဒါကြောင့် ရေများများသောက်ပါ။&lt;/p&gt;
+</code></pre></div>
+<p><b>ရလာဒ် - </b></p>
+<div style="background-color: lightgray;padding:10px;"><pre><code>
+<p>ဒီနေ့ ရာသီဥတုက <mark>အရမ်းပူတယ်</mark>၊ <br>ဒါကြောင့် ရေများများသောက်ပါ။</p>
+</code></pre></div>
+<hr>
+
+<h2><u>D. Underline (အောက်မျဉ်းကြောင်း) – &lt;u&gt; Tag</u></h2>
+<p>ဒါက စာသားရဲ့ အောက်ခြေမှာ မျဉ်းကြောင်းဆွဲပေးတယ်။ ဒါပေမယ့် အထူးသတိထားရမယ့်အချက် – အင်တာနက်ပေါ်မှာ အောက်မျဉ်းကြောင်းက လင့်ခ် (Link) ကိုပဲ ညွှန်ပြလေ့ရှိတယ်။ ဒါကြောင့် ဒီ Tag ကို သိပ်မသုံးသင့်ဘူး။</p>
+<p><b>အကြံပြုချက် – </b> ဒီ Tag ကို ရှောင်ပါ။ လိုအပ်ရင်တော့ CSS နဲ့ ပုံစံပြင်ပါ။</p>
+<hr>
+
+<h2><u>E. Strikethrough (ဖြတ်မျဉ်း) – &lt;s&gt; Tag</u></h2>
+<p>ဒါက စာသားကို အလယ်ကနေ မျဉ်းကြောင်းဖြတ်ပြီး ပျက်ပြယ်သွားပြီဆိုတာကိုပြတယ်။ (ဥပမာ – ဈေးနှုန်းဟောင်း၊ မှားယွင်းနေတဲ့ အချက်အလက်)<br>
+• <b>&lt;s&gt; Tag :</b> Non-semantic ဖြစ်ပြီး ပုံစံဖျက်ပြရုံသက်သက်ပါ။<br>
+• <b>&lt;del&gt; Tag :</b> Semantic ပိုင်းကို သုံးချင်ရင် သုံးရမယ့် Tag ဖြစ်ပြီး "ဒီစာကို ဖယ်ရှားလိုက်ပြီ" လို့ အဓိပ္ပာယ်ရှိတယ်။ ဆန့်ကျင်ဖက်အနေနဲ့ &lt;ins&gt; (insert - အသစ်ထည့်ခြင်း) ဆိုတာလည်း ရှိတယ်။</p>
+<p><b>ဥပမာ - </b></p>
+<div style="background-color: lightgray;padding:10px;"><pre><code>
+&lt;p&gt;
+    မူလဈေးနှုန်း: &lt;s&gt;၁၀၀၀၀ ကျပ်&lt;/s&gt; 
+    ယခုဈေးနှုန်း: ၈၀၀၀ ကျပ် (၂၀% လျှော့ဈေး)
+&lt;/p&gt;
+</code></pre></div>
+<p><b>ရလာဒ် - </b></p>
+<div style="background-color: lightgray;padding:10px;"><pre><code>
+<p>မူလဈေးနှုန်း: <s>၁၀၀၀၀ ကျပ်</s> <br>ယခုဈေးနှုန်း: ၈၀၀၀ ကျပ် (၂၀% လျှော့ဈေး)</p>
+</code></pre></div>
+<hr>
+
+<h2><u>F. Subscript (အခြေ) – &lt;sub&gt; Tag</u></h2>
+<p>ဒါက စာသားကို ပုံမှန်စာကြောင်းရဲ့ အောက်ဘက် မှာ အသေးစားပြဖို့သုံးတယ်။ သိပ္ပံနဲ့ ဓာတုဗေဒ ဖော်မြူလာတွေမှာ အသုံးများတယ်။</p>
+<p><b>ဥပမာ - </b></p>
+<div style="background-color: lightgray;padding:10px;"><pre><code>
+&lt;p&gt;ရေရဲ့ ဓာတုဗေဒဖော်မြူလာက H&lt;sub&gt;2&lt;/sub&gt;O ပါ။&lt;/p&gt;
+</code></pre></div>
+<p><b>ရလာဒ် - </b></p>
+<div style="background-color: lightgray;padding:10px;"><pre><code>
+<p>ရေရဲ့ ဓာတုဗေဒဖော်မြူလာက H<sub>2</sub>O ပါ။</p>
+</code></pre></div>
+<hr>
+
+<h2><u>G. Superscript (ထပ်ညွှန်း) – &lt;sup&gt; Tag</u></h2>
+<p>ဒါက စာသားကို ပုံမှန်စာကြောင်းရဲ့ အပေါ်ဘက် မှာ အသေးစားပြဖို့သုံးတယ်။ သင်္ချာ (ထပ်ကိန်း)၊ ရက်စွဲ တွေမှာ အသုံးများတယ်။</p>
+<p><b>ဥပမာ - </b></p>
+<div style="background-color: lightgray;padding:10px;"><pre><code>
+&lt;p&gt;အိုင်းစတိုင်းရဲ့ ကျော်ကြားတဲ့ ဖော်မြူလာက E = mc&lt;sup&gt;2&lt;/sup&gt; ပါ။&lt;/p&gt;
+&lt;p&gt;ကျွန်တော် ဒီစာကို 2026&lt;sup&gt;th&lt;/sup&gt; ခုနှစ်မှာ ရေးနေတယ်။&lt;/p&gt;
+</code></pre></div>
+<p><b>ရလာဒ် - </b></p>
+<div style="background-color: lightgray;padding:10px;"><pre><code>
+<p>အိုင်းစတိုင်းရဲ့ ကျော်ကြားတဲ့ ဖော်မြူလာက E = mc<sup>2</sup> ပါ။</p>
+<p>ကျွန်တော် ဒီစာကို 2026<sup>th</sup> ခုနှစ်မှာ ရေးနေတယ်။</p>
+</code></pre></div>
+<hr>
+
+<p>1.5 End</p>
+</body>
+
+</html>

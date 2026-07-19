@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>1.2: HTML Tags & Attributes</title>
+</head>
+<body>
+   <h1><u>1.2: HTML Tags & Attributes</u></h1>
+   <hr>
+   <p>· Tag တစ်ခုရဲ့ ခန္ဓာဗေဒ (Anatomy)<br>
+· Attributes (မွမ်းမံပစ္စည်းများ)<br>
+· Special Characters & Entities
+</p>
+<hr>
+<h2><u>A. Tag တစ်ခုရဲ့ ခန္ဓာဗေဒ (Anatomy of a Tag)</u></h2>
+   <p>HTML Tag ဆိုတာ စာသားကို အဓိပ္ပာယ်သတ်မှတ်ပေးတဲ့ အမှတ်အသားပါ။<br>HTML Tag ကို အကြမ်းဖျင်းအားဖြင့် အဓိက ၂ မျိုး ခွဲခြားလေ့ရှိပါတယ်။<br>
+• Container / Paired Tags (ရိုးရိုး Tag)<br>
+• Self-Closing Tag(ကိုယ်တိုင်ပိတ်တဲ့ Tag)</p>
+<h3><u>i. Container / Paired Tags (ရိုးရိုး Tag)</u></h3>
+<p>အများအားဖြင့် ရိုးရိုး Tag တစ်ခုမှာ <i> opening tag , content , closing tag</i> ဆိုပြီး အစိတ်အပိုင်း (၃) ခုပါဝင်ပါတယ်။
+<br>
+<b>ပုံသေနည်း - </b><br><i>&lt;အဖွင့်Tag&gt; အကြောင်းအရာ (Content) &lt;/အပိတ်Tag&gt;</i><br>
+<b>ဥပမာ - </b><br>
+&lt;p&gt;ဒါက စာပိုဒ်တစ်ခုပါ။&lt;/p&gt; = ဒါက စာပိုဒ်တစ်ခုပါ။<br>
+<b>ရှင်းလင်းချက် - </b><br>
+· <i>&lt;p&gt;</i> = အဖွင့်Tag (Opening Tag) – ဒါက စာပိုဒ်စတယ်လို့ Browser ကိုပြောတယ်။<br>
+· <i>ဒါက စာပိုဒ်တစ်ခုပါ။</i> = အကြောင်းအရာ (Content) – Browser က ပြသမယ့် စာသား။<br>
+· <i>&lt;/p&gt;</i> = အပိတ်Tag (Closing Tag) – ဒါက စာပိုဒ်ဆုံးသွားပြီလို့ Browser ကိုပြောတယ်။ (အပိတ်Tagမှာ slash / ပါတယ်။)<br>
+· content ပါဝင်တဲ့ tag ကို <i>Element</i> လိုခေါ်ပါတယ်။<br><br>
+<h3><u>ii. Self-Closing Tag(ကိုယ်တိုင်ပိတ်တဲ့ Tag)</u></h3>
+<br>
+တချို့ Tag တွေက အကြောင်းအရာ (Content) မပါဘူး။ သူတို့က ကိုယ်တိုင်ပဲ ပိတ်သွားတယ်။ ဒီလို tag တွေကိုEmpty tags (သို့မဟုတ်) Single Tag (သို့မဟုတ်) Self-Closing Tag လို့ခေါ်ပါတယ် - <br>
+
+&lt;br&gt;   (စာကြောင်းချရန်) <br>
+&lt;hr&gt;   (အလျားလိုက်မျဉ်းကြောင်းဆွဲရန်)<br>
+&lt;img src=&quot;photo.jpg&quot;&gt; (ပုံထည့်ရန်)</p><hr>
+    <br>
+    <h2><u>B.HTML Attributes (Tag ကို အချက်အလက် ထပ်ထည့်ခြင်း)</u></h2>
+    <p>တစ်ခါတစ်ရံမှာ Tag ကို ပိုပြီးအသေးစိတ်သတ်မှတ်ချင်တယ်။ ဥပမာ – ပုံရဲ့ အကျယ်က 300 pixel ထားပေးပါ  ဆိုတာမျိုး။ ဒီလိုအခါ Attribute ကိုသုံးတယ်။<br>
+Attribute တွေက အဖွင့်Tag ထဲမှာပဲ နေရာယူတယ်။<br>
+Attribute တွေ ကို အကြမ်းအားဖြင့် (၂)မျိုးခွဲလို့ရပါတယ် - <br> • Element-Specific (Local) Attributes<br>
+       • Global Attribute </p>
+ <h3><u>i. Element-Specific Attribute</u></h3>
+ <p>Tag တစ်ခု အတွက်သာ အလုပ်လုပ်ပေးတဲ့ Attribute ဖြစ်ပါတယ်။ ဒီ Attribute တွေကို တခြားနေရာက ခေါ်သုံးလို့ မရပါဘူး။<br>
+ <b>ပုံသေနည်း - </b><br>
+    <i>&lt;tag attribute-name=&quot;attribute-value&quot;&gt;Content&lt;/tag&gt;</i><br>
+    <b>ဥပမာ - </b><br>
+    <i>&lt;img src=&quot;cat.jpg&quot;alt=&quot;ကြောင်လေးတစ်ကောင်&quot;width=&quot;300&quot;&gt;</i>
+    <br>
+    <b>ရှင်းလင်းချက် - </b><br>
+    ဒီမှာ <i>src, alt, width</i> တွေက Attributes တွေပါ။<br>
+· <i>&lt;img&gt;</i> - Tag (self closing tag)<br>
+· <i>src=&quot;cat.jpg&quot;</i> – ပုံဖိုင်ရဲ့တည်နေရာ<br>
+· <i>alt=&quot;ကြောင်လေးတစ်ကောင်&quot;</i> – ပုံက error တစ်ခုခုကြောင့် မပြနိုင်ခဲ့ရင် ပြပေးမယ့်စာသား<br>
+· <i>width=&quot;300&quot;</i> – ပုံရဲ့အကျယ် 300 pixel<br> </p>
+<h3><u>ii. Global Attributes (နေရာတိုင်းသုံးလို့ရတဲ့ Attributes)</u></h3>
+<p>တချို့ Attribute တွေက HTML Tag အကုန်လုံးနီးပါးမှာ သုံးလို့ရတယ်။ သူတို့ကို Global Attributes လို့ခေါ်တယ်။ အရေးအကြီးဆုံး (၃) ခုက – <br>
+•id<br>
+•class<br>
+•style<br></p>
+<h4><u>• id</u></h4>
+<p>တစ်မျိုးတည်းသော (Unique) နာမည်ပေးတယ်။ တစ်မျက်နှာမှာ တစ်ခါပဲသုံးလို့ရတယ်။<br>
+&lt;h1 id=&quot;main-title&quot;&gt;မင်္ဂလာပါ&lt;/h1&gt;</p>
+
+<h4><u>• class</u></h4>
+<p>အုပ်စုဖွဲ့ဖို့ နာမည်ပေးတယ်။ တစ်မျက်နှာမှာ အကြိမ်ကြိမ်သုံးလို့ရတယ်။<br>
+&lt;p class=&quot;highlight&quot;&gt;အရေးကြီးစာသား&lt;/p&gt;</p>
+
+<h4><u>• style</u></h4>
+<p>တိုက်ရိုက် CSS ပုံစံသတ်မှတ်ဖို့။ (ဒါကို ခဏပဲသုံးပါ၊ နောက်ပိုင်း CSS နဲ့အစားထိုးပါ)<br>
+&lt;p style=&quot;color:red;&quot;&gt;ဒီစာလုံးက အနီရောင်ဖြစ်ပါတယ်။&lt;/p&gt;</p>
+<p><b>ဥပမာ -</b><br>
+&lt;div id=&quot;header&quot; class=&quot;container&quot; style=&quot;background-color: lightblue;color:red;&quot&gt;
+    &lt;h1&gt;ကျွန်တော့် Website&lt;/h1&gt;
+&lt;/div&gt;</p>
+
+<p><b>ရလဒ် -</b><br></p>
+<div id="header" class="container" style="background-color: lightblue;color:red;">
+    <h1>ကျွန်တော့် Website</h1>
+</div>
+
+<h2><u>C. Special Characters & Entities (အထူးစာလုံးများ)</u></h2>
+<p>HTML မှာ တချို့စာလုံးတွေကို ရိုက်ရင် Browser က ရှုပ်သွားနိုင်တယ်။ ဥပမာ – &lt;p&gt; ဆိုတဲ့စာကို ပြချင်တယ်ဆိုရင် Browser က ဒါကို Tag လို့ထင်ပြီး code အနေနဲ့ ဖတ်လိုက်ပါတယ်။ ဒါကြောင့် browserမှာ စာသားအ‌နေနဲ့ ပြချင်တဲ့အခါ Entity (ကုဒ်နံပါတ်) တွေကိုသုံးရတယ်။<br>
+Entity တွေက & နဲ့စပြီး ; နဲ့ဆုံးပါတယ်။<br>
+<b>အသုံးများတဲ့ Entity တွေ –</b><br>
+• &lt;(Less Than) - &amp;lt;<br>
+• &gt;(greater Than) - &amp;gt;<br>
+• &amp;(and) - &amp;amp;<br>
+• &quot;(Quotation mark) - &amp;quot;<br>
+• &copy;(copy right) - &amp;copy;<br>
+• &nbsp;(Non-breaking space) - &amp;nbsp;(နေရာလွတ်ကျဲကျဲထားရန်)<br></p>
+<p><b><u>Emoji ထည့်နည်း -</u></b><br>
+Emoji တွေကိုလည်း တိုက်ရိုက်ကူးထည့်လို့ရပါတယ်။ (သို့) Entity နံပါတ်သုံးလို့ရတယ်။<br>
+<p>ကြယ်: &#9733; (Entity နဲ့ &amp;#9733;)</p></p>
+
+
+    <hr>
+    
+    <p> .... 1.2  End....</p>
+</body>
+</html>

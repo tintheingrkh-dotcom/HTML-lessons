@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>1.6:Advanced Text & Code Tags</title>
+      <link rel="icon" href="images/favicon.png">
+</head>
+
+<body>
+      <h1><u>1.6: Advanced Text & code Tags</u></h1>
+      <p>
+· &lt;blockquote&gt; (ကောက်နုတ်ချက်) နဲ့ &lt;q&gt; (အတိုကောက်ကိုးကားချက်)<br>
+· &lt;pre&gt; (ပုံစံမပျက်စာသား)<br>
+· Code-related tags: &lt;code&gt;, &lt;kbd&gt;, &lt;samp&gt;, &lt;var&gt;<br>
+· &lt;abbr&gt; (အတိုကောက်) နဲ့ &lt;address&gt; (ဆက်သွယ်ရန်)
+</p>
+<hr>
+
+<h2><u>A. ကိုးကားချက်များ (Quotations) – &lt;blockquote&gt; နဲ့ &lt;q&gt; </u></h2>
+   <p>တစ်စုံတစ်ယောက်ရဲ့ စကား၊ စာအုပ်စာတမ်းကနေ ကောက်နုတ်ပြီး ကိုးကားတဲ့အခါ ဒီ Tag တွေကိုသုံးတယ်။</p> 
+   <h3><u>i. &lt;blockquote&gt; – ရှည်လျားတဲ့ ကိုးကားချက် (Block-level)</u></h3>  
+   <p>· ဒါက စာပိုဒ်တစ်ခုလုံး ဒါမှမဟုတ် စာပိုဒ်အုပ်စု တစ်ခုလုံးကို ကိုးကားချင်ရင် သုံးတယ်။<br>
+· Browser က ဒီစာသားကို သာမာန်စာသားထက် အနားသတ် (Margin) ပိုခြားပြီး ပြသပေးတယ်။<br>
+· cite ဆိုတဲ့ Attribute နဲ့ ဘယ်ကနေကောက်နုတ်လဲဆိုတဲ့ လိပ်စာ (URL) ကိုထည့်နိုင်တယ်။ (ဒါပေမယ့် စာမျက်နှာပေါ်မှာ မပါဘူး၊ နောက်ကွယ်ကပဲရှိတယ်)</p>
+<b>ဥပမာ -</b>
+<div style="background-color:lightgray;">
+      <pre><code>
+&lt;blockquote cite=&quot;https://www.example.com/စာအုပ်စာတမ်း&quot;&gt;
+    &lt;p&gt;ပညာသည် အလင်းဖြစ်၏။ မိုက်မဲမှုသည် အမှောင်ဖြစ်၏။&lt;/p&gt;
+    &lt;p&gt;ထို့ကြောင့် ပညာကို အစဉ်မပြတ် သင်ယူသင့်ပေသည်။&lt;/p&gt;
+&lt;/blockquote&gt;
+      </code></pre>
+</div>
+
+<b>ရလဒ် -</b>
+<blockquote cite="https://www.example.com/စာအုပ်စာတမ်း" style="background-color:lightgray;">
+<p>ပညာသည် အလင်းဖြစ်၏။ မိုက်မဲမှုသည် အမှောင်ဖြစ်၏။</p>
+<p>ထို့ကြောင့် ပညာကို အစဉ်မပြတ် သင်ယူသင့်ပေသည်။</p>
+</blockquote>
+
+
+<h3><u>ii. &lt;q&gt; – အတိုကောက် ကိုးကားချက် (Inline-level)</u></h3>
+<p>· ဒါက စာကြောင်းတိုတို ကိုးကားချင်ရင် သုံးတယ်။
+· Browser က ဒီစာသားကို &quot;မျက်တောင်အဖွင့်အပိတ်(Quotation Marks)&quot; နဲ့ အလိုအလျောက်ပြပေးတယ်။</p>
+<b>ဥပမာ -</b>
+<div style="background-color:lightgray;"><pre><code>
+&lt:p&gt;
+    ဆရာက &lt;q&gt;HTML ဟာ Web ရဲ့ အခြေခံအုတ်မြစ်ပါ&lt;/q&gt; လို့ ပြောခဲ့တယ်။
+&lt;/p&gt;    
+</code></pre></div>
+<b>ရလာဒ် - </b>
+<div style="background-color:lightgray;">
+<p>
+    ဆရာကြီးက <q>HTML ဟာ Web ရဲ့ အခြေခံအုတ်မြစ်ပါ</q> လို့ ပြောခဲ့တယ်။</div>
+    <hr>
+<h2><u>B. &lt;pre&gt; – ပုံစံမပျက်စာသား (Preformatted Text)</u></h2>
+<p>ဒီ Tag ကတော့ ရိုက်ထားတဲ့ နေရာလွတ် (Spaces) နဲ့ စာကြောင်းချ(Line breaks)တွေ ကို အတိအကျ ပြပေးတယ်။ (သာမာန် HTML က နေရာလွတ်‌တွေ များနေရင် တစ်ခုတည်းအဖြစ် ပြန်ချုံ့ပစ်တယ်)
+· ဒီ Tag ထဲက စာသားက Monospace ဖောင့် (စာလုံးတိုင်း အကျယ်တူ) နဲ့ ပြတယ်။ ကဗျာတွေ ရေးတဲ့အချိန် အဆင်ပြေတယ်။</p>
+<hr>
+<h2><u>C. Code-related Tags (Coding ဆိုင်ရာ Tag များ)</u></h2>
+<p>ဒီ Tag တွေက programming သင်တန်းသားတွေအတွက် အထူးသုံးဖို့ ရည်ရွယ်ထားတာပါ။ Browser က ဒါတွေကို Monospace ဖောင့်နဲ့ ပြပေးတယ်။ code တွေ ကို ဖော်ပြချင်တဲ့ အခါ သုံးတယ်။ Code အရှည်ကြီး ပြချင်တဲ့အခါ &lt;pre&gt; Tag နဲ့ တွဲသုံးရင် ပိုအဆင်ပြေပါတယ်။ </p>
+
+<h3><u>i. &lt;code&gt; Tag – Code အတိုအစ (Inline)</u></h3>
+<p>• စာကြောင်းတစ်ကြောင်းအတွင်းမှာ Code အတိုအစ ကိုပြချင်ရင် သုံးတယ်။</p>
+<b>ဥပမာ -</b>
+<div style="background-color:lightgray;">
+     <p>
+    &lt;p&gt;JavaScript မှာ variable တစ်ခုကို <mark>&lt;code&gt;</mark>let x = 10;<mark>&lt;/code&gt;</mark> လို့ သတ်မှတ်တယ်။&lt;/p&gt;
+</p></div>
+<b>ရလာဒ် -</b>
+<div style="background-color:lightgray;">
+<p>JavaScript မှာ variable တစ်ခုကို <mark><code>let x = 10;</code> </mark>လို့ သတ်မှတ်တယ်။</p></div>
+
+<h3><u>ii. &lt;kbd&gt; – ကီးဘုတ်ခလုတ် (Keyboard Input)</u></h3>
+<p>• သုံးစွဲသူက ကီးဘုတ်ပေါ်မှာ ဘာနှိပ်ရမလဲ ဆိုတာကို ပြချင်ရင် သုံးတယ်။</p>
+<b>ဥပမာ -</b>
+<div style="background-color:lightgray;">
+<p>ဖိုင်ကို ကူးဖို့ <mark>&lt;kbd&gt;</mark>Ctrl<mark>&lt;/kbd&gt;</mark> + <mark>&lt;kbd&gt;</mark>C<mark>&lt;/kbd&gt;</mark> ကိုနှိပ်ပါ။
+</p></div>
+<b>ရလာဒ် -</b>
+<div style="background-color:lightgray;">
+<p>ဖိုင်ကို ကူးဖို့ <mark><kbd>Ctrl</kbd></mark> + <mark><kbd>C</kbd></mark> ကိုနှိပ်ပါ။
+</p></div>
+<h3><u>iii. &lt;samp&gt; Tag  – ရလာဒ်(Sample Output)
+</u></h3>
+<p>• ကွန်ပျူတာ ပရိုဂရမ်တစ်ခုက ဘာစာသားပြန်ထုတ်ပေးလဲ ဆိုတာကို ပြချင်ရင် သုံးတယ်။<br>• ဒီ tag ကို သုံးခြင်းက semantic web ဖြစ်စေပါတယ်။<br>• ရှာဖွေရေးအင်ဂျင်တွေ (Search Engines) နဲ့ Screen Reader တွေက ဒီစာသားဟာ ကွန်ပျူတာ output ဖြစ်တယ်ဆိုတာကို အလွယ်တကူ နားလည်သဘောပေါက်စေဖို့ ကူညီပေးပါတယ်။</p>
+<b>ဥပမာ -</b>
+<div style="background-color:lightgray;">
+      <p>
+    Terminal မှာ error ကျရင် <mark>&lt;samp&gt;</mark>Error 404: File not found<mark>&lt;/samp&gt;</mark> ဆိုတဲ့ စာတန်းကို ပြလိမ့်မယ်။
+</p>
+</div>
+<b>ရလာဒ် -</b>
+<div style="background-color:lightgray;"></div>"
+      <p>
+    Terminal မှာ error ကျရင် <mark><samp>Error 404: File not found</samp></mark> ဆိုတဲ့ စာတန်းကို ပြလိမ့်မယ်။
+</p>
+</div>
+
+<h3><u>iv. &lt;var&gt; – ပြောင်းလဲနိုင်သောကိန်းရှင်များ (Variable)</u></h3>
+      <p>• သင်္ချာ ဒါမှမဟုတ် programming ထဲက ကိန်းရှင် (Variable) ကိုပြချင်ရင် သုံးတယ်။<br>• &quot;ဒီစာသားဟာ ကိန်းရှင် (Variable) တစ်ခုဖြစ်တယ်&quot; ဆိုပြီး Browser နဲ့ Search Engine တွေကို အဓိပ္ပာယ် ဖွင့်ဆိုပေးတာ (Semantic) ဖြစ်ပါတယ်။ (ပုံမှန်အားဖြင့် Italic နဲ့ပြတယ်)</p>
+<b>ဥပမာ -</b>
+<div style="background-color:lightgray">
+<pre><code>
+&lt;p&gt;
+      <mark>&lt;var&gt;</mark>user_name<mark>&lt;/var&gt;</mark> ဆိုတဲ့ variable ထဲမှာ အသုံးပြုသူရဲ့ နာမည်ကို သိမ်းဆည်းထားပါတယ်။
+&lt;/p&gt;
+</code></pre></div>
+<b>ရလာဒ် -</b>
+<div style="background-color:lightgray">
+
+<p>
+      <mark><var>user_name</var></mark> ဆိုတဲ့ variable ထဲမှာ အသုံးပြုသူရဲ့ နာမည်ကို သိမ်းဆည်းထားပါတယ်။
+</p></div>
+<hr>
+
+<h2><u>D.&lt;abbr&gt; – အတိုကောက် (Abbreviation)</u></h2>
+
+<p>• ဒါက HTML၊ CSS၊ ASAP စတဲ့ အတိုကောက်စာလုံးတွေရဲ့ အပြည့်အစုံ (Full form) ကိုပြတယ်။<br>
+
+• သုံးစွဲသူက စာလုံးပေါ် Mouse နဲ့‌ထောက်လိုက်ရင် title ထဲမှာထည့်ထားတဲ့ အပြည့်အစုံက ပေါ်လာမယ်။ (Screen Reader အတွက်လည်း အရမ်းကောင်းတယ်)</p>
+<b>ဥပမာ -</b>
+<div style="background-color:lightgray;">
+<pre><code>
+&lt;p&gt;
+    <mark>&lt;abbr title=&quot;HyperText Markup Language&quot;&gt;</mark>HTML<mark>&lt;/abbr&gt;</mark> ကို လေ့လာနေတယ်။
+&lt;/p&gt;
+</code></pre>     
+</div>
+<b>ရလာဒ် -</b>
+<div style="background-color:lightgray;">
+
+<p>
+    <abbr title="HyperText Markup Language"><mark>HTML</mark></abbr> ကို လေ့လာနေတယ်။
+</p></div>
+<hr>
+<h2><u>E. &lt;address&gt; – ဆက်သွယ်ရန်အချက်အလက် (Contact Information)</u></h2>
+<p>• ဒီ Tag က စာရေးသူ (Author) ရဲ့ ဆက်သွယ်ရန် အချက်အလက်တွေကို ထည့်ဖို့သုံးတယ်။ (လိပ်စာ၊ ဖုန်းနံပါတ်၊ အီးမေးလ်)<br>
+• Browser က ဒီစာသားကို Italic နဲ့ ပြလေ့ရှိတယ်။</p>
+
+<b>ဥပမာ -</b>
+<div style="background-color:lightgray;"><pre><code>
+&lt;address&gt;
+    ရေးသားသူ: TIN THEING(စော်ငြင်းကောင်)&lt;br&gt;
+    အီးမေးလ်: &lt;a href=&quot;mailto: tintheing.rkh@gmail.com&quot;&gt; tintheing.rkh@gmail.com&lt;/a&gt;&lt;br&gt;
+    လိပ်စာ: အခန်း ၂၀၆၊ ဒုတိယထပ်၊ Unfriend Zone ၊မန္တလေးမြို့။
+&lt;/address&gt;
+</code></pre></div>
+
+<b>ရလာဒ် -</b>
+<div style="background-color:lightgray;">
+<address>
+    ရေးသားသူ: TIN THEING(စော်ငြင်းကောင်)<br>
+    အီးမေးလ်: <a href="mailto:tintheing.rkh@gmail.com">tintheing.rkh@gmail.com</a><br>
+    လိပ်စာ: အခန်း ၂၀၆၊ ဒုတိယထပ်၊ Unfriend Zone ၊မန္တလေးမြို့။
+</address></div>
+<hr>
+
+<br><br>
+<p>-----1.6 END----</p>
+
+</body>
+
+</html>
