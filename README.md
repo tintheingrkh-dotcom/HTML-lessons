@@ -4,7 +4,7 @@
 
 ---
 
-### 🎯 သင်တန်းအနှစ်ချုပ် (Overview)
+### 🎯 အနှစ်ချုပ် (Overview)
 * **အဆင့် (Level):** Beginner ➜ Intermediate
 * **လက်ရှိတိုးတက်မှု (Progress):** * 🟢 HTML Beginner: `[████████████████████] 100%`
   * 🟡 HTML Intermediate: `[██████████████████░] 95%`

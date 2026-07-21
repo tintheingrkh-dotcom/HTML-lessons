@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>2.1: HTML LIST</title>
+      <link rel="icon" href="../Module 1- HTML Fundamentals/images/favicon.png">
+</head>
+
+<h1><u>2.1: HTML list (စာရင်းများ)</u></h1>
+<p>website ပေါမှာ စာရင်း ကိုပြချင်တဲ့အချိန် သုံးရန်။HTML မှာ စာရင်းအမျိုးအစား (၃) မျိုးရှိတယ်။<br>
+• Unordered List (&lt;ul&gt;, &lt;li&gt;) – မှတ်စု စာရင်း<br>
+• Ordered List (&lt;ol&gt;, &lt;li&gt;) – အစဉ်လိုက် စာရင်း (start, reversed, type)<br>
+• Description List (&lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt;) – ဖော်ပြချက် စာရင်း<br>
+• Nested Lists – စာရင်းထဲမှာ စာရင်းထပ်ထည့်ခြင်း
+</p>
+<hr>
+
+<h2><u>A. Unordered List - မှတ်စု စာရင်း(&lt;ul&lt; &amp; &lt;li&gt;)</u></h2>
+<p>ဒီစာရင်းက အစဉ်လိုက်မဟုတ်ဘဲ items(ပစ္စည်းတွေ)ကို စုစည်းပြသဖို့သုံးတယ်။ ဘေးမှာ (Bullet point - •) ပါတယ်။<br>
+• &lt;ul&gt; = Unordered List (list Tag)<br>
+• &lt;li&gt; = List Item (စာရင်းထဲက item)</p>
+<b>ဥပမာ -</b>
+<div style="background-color:lightgray;">
+<pre><code>
+&lt;ul&gt;
+    &lt;li&gt;ကြက်ဥ&lt;/li&gt;
+    &lt;li&gt;ထမင်း&lt;/li&gt;
+    &lt;li&gt;ဟင်းသီးဟင်းရွက်&lt;/li&gt;
+    &lt;li&gt;ငါးပိ&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+</div>
+<b>ရလာဒ် -</b>
+<div style="background-color:lightgray;">
+<ul>
+    <li>ကြက်ဥ</li>
+    <li>ထမင်း</li>
+    <li>ဟင်းသီးဟင်းရွက်</li>
+    <li>ငါးပိ</li>
+</ul>
+</div>
+<hr>
+
+<h2><u>B. Ordered List (အစဉ်လိုက်စာရင်း) – &lt;ol&gt; &amp; &lt;li&gt;</u></h2>
+<p>ဒီစာရင်းက အစဉ်လိုက် (ပထမ၊ ဒုတိယ၊ တတိယ...) အရေးကြီးတဲ့ စာရင်းမျိုးအတွက်သုံးတယ်။ ပုံမှန်အားဖြင့် ဘေးမှာ နံပါတ် (၁၊ ၂၊ ၃...) ပါတယ်။<br>
+· &lt;ol&gt; = Ordered List<br>
+· &lt;li&gt; = List Item</p>
+
+<b>ဥပမာ -</b>
+<div style="background-color:lightgray;">
+<pre><code>
+&lt;ol&gt;
+    &lt;li&gt;မီးဖိုကိုဖွင့်ပါ။&lt;/li&gt;
+    &lt;li&gt;အိုးထဲသို့ ဆီထည့်ပါ။&lt;/li&gt;
+    &lt;li&gt;ကြက်ဥကို ခွဲထည့်ပါ။&lt;/li&gt;
+    &lt;li&gt;ဆားဖြူးပြီး မွှေပါ။&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+</div>
+<b>ရလာဒ် -</b>
+<div style="background-color:lightgray;">
+<ol>
+    <li>မီးဖိုကိုဖွင့်ပါ။</li>
+    <li>အိုးထဲသို့ ဆီထည့်ပါ။</li>
+    <li>ကြက်ဥကို ခွဲထည့်ပါ။</li>
+    <li>ဆားဖြူးပြီး မွှေပါ။</li>
+</ol></div>
+
+<h3><u>• &lt;ol&gt; Tag အတွက် Attributes</u></h3>
+<p>- ordered list မှာ &quot; type &quot; attribute ကို သုံးပြီး နံပါတ်စဉ်အစား အက္ခရာအလိုက် စာရင်းကို စီနိုင်ပါတယ်။<br> Ordered List type value (5) မျိုးရှိပါတယ်။<i>(1, A, a, I, i)</i><br>
+- start Attribute ကို သုံးပြီး ကိုစတင်ချင်တဲ့ နေရာကို သတ်မှတ်လို့ ရပါတယ်။ </p>
+
+<b>ဥပမာ | Browser မှာ C. ပထမအချက်၊ D. ဒုတိယအချက် လို့ပြချင်တယ် ဆိုရင် -
+</b>
+<div style="background-color:lightgray;">
+      <pre><code>
+&lt;ol type=&quot;A&quot; start=&quot;3&quot;&gt;
+    &lt;li&gt;ပထမအချက်&lt;/li&gt;
+    &lt;li&gt;ဒုတိယအချက်&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+</div>
+
+<b>ရလာဒ် -</b>
+<div style="background-color:lightgray;">
+<ol type="A" start="3">
+    <li>ပထမအချက်</li>
+    <li>ဒုတိယအချက်</li>
+</ol></div>
+
+<p>(A=1, B=2, C=3 ကနေစတယ်)</p>
+<hr>
+<h2><u>C. Description List (ဖော်ပြချက် စာရင်း) – &lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt;</u></h2>
+<p>HTML မှာ Description List (ဖော်ပြချက်စာရင်း) ဆိုတာ အသုံးအနှုန်းတစ်ခု (Term) နဲ့ ယင်းရဲ့ အဓိပ္ပာယ်ဖွင့်ဆိုချက် (Description/Definition) တွေကို တွဲဖက်ပြီး ပြသချင်တဲ့အခါ သုံးပါတယ်။<br>
+အဘိဓာန် (Dictionary) ပုံစံမျိုး၊ Glossary (ဝေါဟာရအဖွင့်များ) ဒါမှမဟုတ် မေးလေ့ရှိသောမေးခွန်းများ (FAQs) တွေအတွက် အသုံးများပါတယ်။<br>
+သူ့မှာ Bullet ဒါမှမဟုတ် နံပါတ်မပါဘူး။<br>
+သူ့ကို တည်ဆောက်ဖို့အတွက် Tag ၃ ခု ကို တွဲဖက်သုံးရပါမယ် -<br>
+• &lt;dl&gt; = Description List (ပင်မ စာရင်း)<br>
+• &lt;dt&gt; = Description Term (အဓိပ္ပာယ်ဖွင့်မယ့် စကားလုံး အသုံးအနှုန်း/ခေါင်းစဉ်)<br>
+• &lt;dd&gt; = Description Definition (အဲဒီစကားလုံးရဲ့ အဓိပ္ပာယ်)</p>
+
+<b>ဥပမာ -</b>
+<div style="background-color:lightgray;">
+<pre><code>
+&lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;HyperText Markup Language – Web ရဲ့ အခြေခံအုတ်မြစ်&lt;/dd&gt;
+    
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Cascading Style Sheets – Web ကို အလှဆင်ပေးတဲ့ဘာသာစကား&lt;/dd>
+    &gt;
+    
+    &lt;dt&gt;JavaScript&lt;/dt&gt;
+    &lt;dd&gt;Web ကို အသက်ဝင်စေတဲ့ ပရိုဂရမ်းမင်းဘာသာစကား&lt;/dd&gt;
+&lt;/dl&gt;
+</code></pre>
+</div>
+
+
+<b>ရလာဒ် -</b>
+<div style="background-color:lightgray;">
+<dl>
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language – Web ရဲ့ အခြေခံအုတ်မြစ်</dd>
+    
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets – Web ကို အလှဆင်ပေးတဲ့ဘာသာစကား</dd>
+    
+    <dt>JavaScript</dt>
+    <dd>Web ကို အသက်ဝင်စေတဲ့ ပရိုဂရမ်းမင်းဘာသာစကား</dd>
+</dl></div>
+
+<hr>
+
+<h2><u>D. Nested Lists (စာရင်းထဲမှာ စာရင်းထပ်ထည့်ခြင်း)</u></h2>
+<p>ဒါက အဆင့်ဆင့် (Hierarchy) ရှိတဲ့ အကြောင်းအရာတွေအတွက် အရမ်းအသုံးဝင်တယ်။ စာရင်းတစ်ခုရဲ့ li ထဲမှာ နောက်ထပ် ul (သို့) ol ကို ထပ်ထည့်လို့ရတယ်။</p>
+
+<b>ဥပမာ -</b>
+<div style="background-color:lightgray;"><pre><code>
+&lt;ul&gt;
+    &lt;li&gt;
+        စာရေးကိရိယာ
+        &lt;ul&gt;
+            &lt;li&gt;ဘောပင်&lt;/li&gt;
+            &lt;li&gt;ခဲတံ&lt;/li&gt;
+            &lt;li&gt;ဖျက်တံ&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        စာအုပ်
+        &lt;ul&gt;
+            &lt;li&gt;မြန်မာစာအုပ်&lt;/li&gt;
+            &lt;li&gt;အင်္ဂလိပ်စာအုပ်&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+      
+</code></pre></div>
+
+<b>ရလာဒ် -</b>
+<div style="background-color:lightgray;">
+      <ul>
+    <li>
+        စာရေးကိရိယာ
+        <ul>
+            <li>ဘောပင်</li>
+            <li>ခဲတံ</li>
+            <li>ဖျက်တံ</li>
+        </ul>
+    </li>
+    <li>
+        စာအုပ်
+        <ul>
+            <li>မြန်မာစာအုပ်</li>
+            <li>အင်္ဂလိပ်စာအုပ်</li>
+        </ul>
+    </li>
+</ul>
+</div>
+
+<br>
+<b>----- 2.1 END-----</b>
+<br>
+<hr>
+<a href="../Module 1- HTML Fundamentals/1.6 Advanced Text and Code Tags.html">Module 1</a>
+<br><br>
+<a href="2.2 Hyperlinks.html">LESSON - 2.2</a>
+<hr>
+<body>
+    
+</body>
+</html>

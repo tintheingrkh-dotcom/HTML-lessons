@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="my">
+      
+<head>
+      <meta charset="UTF-8">
+      <title>2.2: Hyperlinks</title>
+      <link rel="icon" href="../Module 1- HTML Fundamentals/images/favicon.png">
+</head>
+
+<body>
+<h1><u>2.2: Hypelinks - &lt;a&gt; Tag </u></h1>
+<p>Hyperlinks (ဟိုက်ပါလင့်ခ်များ) ဆိုတာ Website တစ်ခုရဲ့ အသက်သွေးကြောလို့ ပြောလို့ရပါတယ်။<br>
+စာမျက်နှာတစ်ခုကနေ တစ်ခုကို ကူးပြောင်းဖို့၊ တခြား Website တွေဆီ ချိတ်ဆက်ဖို့ ဒါမှမဟုတ် ဖိုင်တွေ ဒေါင်းလုဒ်လုပ်ဖို့အတွက် Hyperlink တွေကို သုံးပါတယ်။<br>
+HTML မှာတော့ သူ့ကို Anchor Tag (&lt;a&gt;) နဲ့ တည်ဆောက်ပါတယ်။</p>
+<ul>
+      <li>External Links (အခြား Website များ) နဲ့ Internal Links (ကိုယ်ပိုင် Page များ)</li>
+      <li>target="_blank" နဲ့ လုံခြုံရေးအတွက် rel="noopener noreferrer"</li>
+      <li>Email Link (mailto:) နဲ့ Phone Link (tel:)</li>
+      <li>Page Jump သို့မဟုတ် Anchor Links (Bookmarking) </li>
+      <li>Download Attribute (ဖိုင်ဒေါင်းလုဒ်ချရန်)</li>
+</ul>
+<hr>
+<hr>
+<h2><u>A. Hyperlink - &lt;a&gt; Tag ရဲ့ ဖွဲ့စည်းပုံ</u></h2>
+<p>Hyperlink တစ်ခု တည်ဆောက်ဖို့ အနည်းဆုံး အချက် ၂ ချက် လိုအပ်ပါတယ်။</p>
+<ol>
+<li>လိပ်စာ (URL): ဘယ်သွားမလဲဆိုတဲ့ လမ်းကြောင်း။</li>
+<li>ပြသမည့်စာသား (Link Text): အသုံးပြုသူ နှိပ်ဖို့ မြင်ရမည့် စာသား။</li>
+</ol>
+<b>ဥပမာ –</b>
+<div style="background-color:lightgray;">
+      <code>
+&lt;a href="https://www.google.com"&gt;Google သို့သွားရန်&lt;/a&gt;
+</code></div>
+<b>ရှင်းလင်းချက် -</b>
+<ul>
+      <li>&lt;a&gt; : Anchor Tag ဖြစ်ပါတယ်။</li>
+      <li>href : Hypertext Reference ရဲ့ အတိုကောက်ဖြစ်ပြီး သွားချင်တဲ့ လိပ်စာ (URL) ကို ထည့်ရတဲ့ Attribute ဖြစ်ပါတယ်။</li>
+</ul>
+      <li>Google သို့သွားရန် : ဒါကတော့ User တွေ မြင်ရပြီး နှိပ်ရမယ့် စာသား (Anchor Text) ဖြစ်ပါတယ်။</li>
+</ul>
+<b>ရလာဒ် -</b><br>
+<div style="background-color:lightgray;">
+<a href="https://www.google.com">Google သို့သွားရန်</a>
+</div>
+<p><i> &quot; Google ကိုသွားရန် &quot;ဆိုတဲ့ စာသားက အပြာရောင်၊ အောက်မျဉ်းကြောင်းပါတဲ့ လင့်ခ်အဖြစ် ပေါ်လာမယ်။ နှိပ်လိုက်ရင် Google စာမျက်နှာကို ရောက်သွားမယ်။</i></p>
+<h3><u>i. External Links (ပြင်ပလင့်ခ် – တစ်ခြား Website ကိုသွားခြင်း)</u></h3>
+<p>ဒါက တခြား Website တစ်ခုကို သွားချင်ရင် သုံးတယ်။ href ထဲမှာ အပြည့်အစုံလိပ်စာ (Full URL) ကို ထည့်ရတယ်။ (အစမှာ https:// ပါရမယ်။)</p>
+<div style="background-color:lightgray;">
+<p>• ဥပမာ ကတော့ အပေါ်က <b><u><i>Google သို့သွားရန်</i></u></b> ဥပမာ အတိုင်းဖြစ်ပါတယ်။</p></div>
+<h3><u>ii. Internal Links (အတွင်းလင့်ခ် – ကိုယ့် Website ထဲက စာမျက်နှာများ)</u></h3>
+<p>ဒါက သင့် Website ထဲမှာရှိတဲ့ တစ်ခြား HTML စာမျက်နှာ ကိုသွားချင်ရင် သုံးတယ်။ href ထဲမှာ ဖိုင်နာမည် (File Path) ကိုထည့်တယ်။</p>
+<b> ဥပမာ | Lesson 2.1 ကို သွားချင်ရင် -</b>
+<div style="background-color:lightgray;"><code>
+&lt;a href=&quot;2.1 HTML Lists.html&quot;&gt;lesson 2.1&lt;/a&gt;
+</code></div>
+<br>
+<b> ရလာဒ် | Lesson 2.1 ကို ရောက်သွားမှာဖြစ်ပါတယ် -</b>
+<div style="background-color:lightgray;">
+<a href="2.1 HTML Lists.html">Lesson 2.1</a>
+</div>
+<p>• သွားချင်တဲ့ file က လက်ရှိ file နဲ့ Folder ချင်း တူနေရင် ဖိုင်နာမည်ကို တန်းထည့်လို့ရ။<br>
+• မတူခဲ့ရင် -</p>
+<div style="background-color:lightgray;"><code>
+      &lt;a href=<mark>&quot;../Module 1- HTML Fundamentals/1.1 Web Basics and HTML Introduction.html&quot;</mark>&gt;&lt;/a&gt;
+</code></div>
+<p><i>• ဖိုင်တစ်ဖိုင်က ထွက်ချင်ရင် (../)တစ်ခါ‌ရေးပါ။နှစ်ခါထွက်ချင်ရင် (../../) နှစ်ကြိမ်ရေး။</i></p>
+<b>ရလာဒ် -</b>
+      <div style="background-color:lightgray;">
+      <a href="../Module 1- HTML Fundamentals/1.1 Web Basics and HTML Introduction.html">Lesson 1.1</a>
+</div>
+<hr>
+<h2><u>B. Target Attribute (link ဖွင့်မည့်ပုံစံ)</u></h2>
+<p>လင့်ခ်တစ်ခုကို နှိပ်လိုက်ရင် လက်ရှိ Tab မှာပဲ ပွင့်မလား၊ Tab အသစ်နဲ့ ပွင့်မလားဆိုတာကို target attribute နဲ့ ထိန်းချုပ်ပါတယ်။</p>
+<ul>
+      <li>target=&quot;_self&quot; – နေရာတူ (လက်ရှိ Tab ထဲမှာပဲ ပွင့်မယ်) ဒါက ပုံမှန်ပါ။</li>
+      <li>target=&quot;_blank&quot; – Tab အသစ် ဖွင့်ပြီး သွားမယ်။</li>
+</ul>
+
+<b>ဥပမာ -</b>
+<div style="background-color:lightgray;"><code>
+&lt;a href=&quot;https://www.wikipedia.org&quot; <mark>target=&quot;_blank&quot;</mark>&gt;Wikipedia ကို Tab အသစ်နဲ့ဖွင့်မယ်&lt;/a&gt;
+</code></div>
+<b>ရလာဒ် -</b>
+<div style="background-color:lightgray;">
+      <a href="https://www.wikipedia.org" target="_blank">Wikipedia ကို Tab အသစ်နဲ့ဖွင့်မယ်</a>
+</div><br>
+      <hr>
+   
+<h2><u>C. လုံခြုံရေးအတွက် rel=&quot;noopener noreferrer&quot;</u></h2>
+<p>
+target=&quot;_blank&quot; သုံးရင် အနောက်ကနေ rel=&quot;noopener noreferrer&quot; တွဲထည့်ပေးဖို့ မဖြစ်မနေ လိုအပ်ပါတယ်။<br>Tab အသစ်ဖွင့်ပြီး တခြား Security မကောင်းတဲ့ Website (သို့) malicious website တစ်ခုဆီ လင့်ခ်ချိတ်မိတဲ့အခါTarget Page ကနေ ကိုယ့်ရဲ့ မူလ Page ကို window.opener ဆိုတဲ့ JavaScript object ကနေတစ်ဆင့် လှမ်းပြီး ထိန်းချုပ်လို့ ရသွားပါတယ်။<br> ဥပမာ- ကိုယ့် Website စာမျက်နှာကို Fake Login Page အတုကြီး ပြောင်းပစ်လိုက်ပြီး User ရဲ့ Password တွေကို ခိုးယူတာမျိုး (Phishing) လုပ်နိုင်ပါတယ်။
+</p>
+ <b>ဥပမာ -</b>
+  <div style="background-color:lightgray;"><code>
+         &lt;a href=&quot;https://google.com&quot; target=&quot;_blank&quot; <mark>rel=&quot;noopener noreferrer&quot;</mark>&gt;Google သို့ လုံခြုံစွာ သွားရန်&lt;/a&gt;
+  </code> </div>
+   
+<b>ရလာဒ် -</b>
+   <div style="background-color:lightgray;">
+         <a href="https://google.com" target="_blank" rel="noopener noreferrer">Google သို့ လုံခြုံစွာ သွားရန်</a>
+   </div>
+   <p><i>•တစ်ချို့ Browser တွေမှာ Unvisited Link အဖြစ် ဆက်ပြနေ။<br>• 
+ဒါကို အကောင်းဆုံး Practice (Best Practice) အနေနဲ့ အမြဲသုံးပါ။</i></p>
+<hr>
+
+<h2 id="D"><u>D. Email Link (mailto:) နဲ့ Phone Link (tel:)</u></h2>
+   <p>ဒါတွေက သုံးစွဲသူကို အီးမေးလ်ပို့ဖို့ ဒါမှမဟုတ် ဖုန်းခေါ်ဖို့ ခလုတ်လုပ်ပေးတယ်။</p>
+   <ul>
+         <li>mailto: – သုံးစွဲသူရဲ့ Default Email App ကိုဖွင့်ပြီး လိပ်စာထည့်ပေးတယ်။</li>
+         <li>tel: – သုံးစွဲသူရဲ့ ဖုန်းကို ခေါ်ဆိုမှုစဖို့ ပြင်ဆင်ပေးတယ်။</li>
+   </ul>
+   
+<b>ဥပမာ -</b>
+<div style="background-color:lightgray"><code>
+      &lt;a href=&quot<mark>mailto:</mark>tintheing.rkh@gmail.com&quot;&gt;ကျွန်တော့်ကို အီးမေးလ်ပို့ပါ&lt;/a&gt;<br>
+&lt;a href=&quot;<mark>tel:</mark>+959123456789&quot&gt;ဖုန်းဆက်ပါ (၀၉ ၁၂၃ ၄၅၆ ၇၈၉)&lt;/a&gt;
+</code></div>
+   
+   <b>ရလာဒ် -</b>
+<div style="background-color:lightgray">
+      <a href="mailto:tintheing.rkh@gmail.com">ကျွန်တော့်ကို အီးမေးလ်ပို့ပါ</a><br>
+<a href="tel:+959123456789">ဖုန်းဆက်ပါ (၀၉ ၁၂၃ ၄၅၆ ၇၈၉)</a>
+</div><br>
+<hr>
+   
+ <h2><u>E. Page Jump
+  သို့မဟုတ် Anchor Links (Bookmarking) </u></h2>
+<p>စာမျက်နှာတစ်ခုတည်းမှာတင် အချက်အလက်တွေ အများကြီးရှိတဲ့အခါ (ဥပမာ - Wikipedia Page တွေ၊ Terms & Conditions Page တွေမှာ) User တွေ အပေါ်အောက် အလွယ်တကူ ခုန်ကူးဖတ်ရှုနိုင်အောင် သုံးတာ ဖြစ်ပါတယ်။
+သူ့ရဲ့ အဓိက လျှို့ဝှက်ချက်ကတော့ id Attribute နဲ့ # (Hashtag) ကို တွဲဖက် အလုပ်လုပ်စေတာပါပဲ။</p>
+<p>• အရင်ဆုံး သွားချင်တဲ့ ခေါင်းစဉ် (သို့မဟုတ်) Section နေရာမှာ id တစ်ခု သတ်မှတ်ပေးရပါမယ်။ (id နာမည်ကို ကြိုက်တာပေးလို့ရပါတယ်)</p>
+<i>• ဥပမာ အနေနဲ့ ကျွန်တော်တို့က ဒီ web page ရဲ့ <b>D. Email Link (mailto:) နဲ့ Phone Link (tel:)</b> သင်ခန်းစာကို ခုန်ပြီးသွားချင်တယ် ဆိုပါစို့။ သူ့ကို သွားပြီး ID တစ်ခုသွားပေးရပါမယ် -</i>
+<div style="background-color:lightgray;">
+<code>
+ &lt;h2 <mark>id=&quot;D&quot;</mark>&gt;D. Email Link (mailto:) နဲ့ Phone Link (tel:)&lt;/h2&gt;
+</code></div>
+<i>• ID ကို <mark>D</mark> လို့ပဲ အလွယ်ပေးလိုက်ပါတယ်</i>
+<p>• ဒုတိယအဆင့်အနေနဲ့ နှိပ်ရမယ့် &lt;a&gt; tag ရဲ့ href ထဲမှာ စောစောက ပေးခဲ့တဲ့ id နာမည်ရဲ့ အရှေ့မှာ # ခံပြီး ရေးပေးရပါမယ်။ (# ရဲ့ သဘောက &quot;ဒီစာမျက်နှာထဲက id ကို ရှာပါ&quot; လို့ အဓိပ္ပာယ်ရပါတယ်)</p>
+
+<div style="background-color:lightgray;"><code>
+&lt;a <mark>href=&quot#D&quot;</mark>&gt;D. Email Link (mailto:) နဲ့ Phone Link (tel:)&lt;/a&gt;     
+</code></div>
+
+<b>ရလာဒ် -</b>
+<div style="background-color:lightgray;">
+<a href="#D">D. Email Link (mailto:) နဲ့ Phone Link (tel:)</a>      
+</div>
+<i>• နှိပ်လိုက်ရင် ID ပေးထားတဲ့ ခေါင်းစဉ် <b>D. Email Link (mailto:) နဲ့ Phone Link (tel:)</b> ဆီကိုခုန်ကူးသွားမှာပဲ ဖြစ်ပါတယ်။</i>
+<p>တကယ်လို့ web page ရဲ့ အပေါ်ဆုံးကို သွားချင်ရင် &lt;a&gt; Tag ရဲ့ &quot;href&quot; attribute မှာ #top ဆိုပြီး တန်းထည့်ရုံပါပဲ။ ID ပေးစရာမလိုပါဘူး။ Browser သူ့ဘာသာသူ သိပါတယ်။ </p>
+<b>ဥပမာ -</b>
+<div style="background-color:lightgray;"><code>
+&lt;a href=<mark>&quot;#top&quot;</mark>&gt;အပေါ်ဆုံးသို့သွားရန်&lt;/a&gt;</code>
+</div>
+
+<b>ရလာဒ် -</b>
+<div style="background-color:lightgray;">
+<a href="#top">အပေါ်ဆုံးသို့သွားရန်</a>
+</div>
+<i>• နှိပ်လိုက်ရင် web page ရဲ့အပေါ်ဆုံး ကို ရောက်သွားမှာပါ။</i><br>
+<hr>
+
+<h2><u>F. Download Attribute (ဖိုင်ဒေါင်းလုဒ်ချရန်)</u></h2>
+<p>HTML က &lt;a&gt; (Anchor) tag ထဲမှာ သုံးတဲ့ download attribute ဆိုတာ လင့်ခ်တစ်ခုကို နှိပ်လိုက်တဲ့အခါ အဲဒီဖိုင်ကို Browser မှာ တိုက်ရိုက်မပွင့်စေဘဲ User ရဲ့ စက်ထဲကို ဖိုင်အဖြစ် ဒေါင်းလုဒ် (Download) ဆွဲချပေးဖို့ အမိန့်ပေးတဲ့ attribute ဖြစ်ပါတယ်။<br>
+ဥပမာ - ပုံမှန်ဆိုရင် PDF ဖိုင် ဒါမှမဟုတ် ဓာတ်ပုံလင့်ခ်တစ်ခုကို နှိပ်ရင် Browser ထဲမှာပဲ ပွင့်လာတတ်ပါတယ်။ အဲလိုမပွင့်ဘဲ စက်ထဲ တန်းဒေါင်းချင်ရင် download attribute ကို သုံးရပါတယ်။<br>
+• Download ပုံစံ (၂) မျိုးရှိပါတယ် -</p>
+<ol type="i">
+      <li>ရိုးရိုး download ဆွဲခြင်း</li>
+      <li>Download ဖိုင်နာမည်ကို အသစ်ပြောင်းပေးခြင်း</li>
+</ol>
+<h3><u>i. ရိုးရိုး Download </u></h3>
+<p>download ဆိုတဲ့ စာသားလေး ထည့်ပေးလိုက်ရုံပါပဲ။ ဖိုင်ရဲ့ မူရင်းနာမည်အတိုင်း ဒေါင်းလုဒ်ဆွဲပေးပါလိမ့်မယ်။</p>
+<b>ဥပမာ -</b>
+<div style="background-color:lightgray;"><code>
+      &lt;a href=&quot;images/man-ujpg&quot;<mark>download</mark>&gt;Man-U Logo&lt;/a&gt;
+</code></div>
+
+<b>ရလာဒ် -</b>
+<div style="background-color:lightgray;">
+      <a href="images/man-u.jpg" download>Man-U Logo</a>
+</div>
+
+<h3>ii. Download ဖိုင်နာမည်ကို အသစ်ပြောင်းပေးခြင်း</h3>
+<p>download=&quot;___&quot; ထဲမှာ ကိုယ်ပေးချင်တဲ့ ဖိုင်နာမည်အသစ်ကို ရေးပေးလိုက်ရင် User စက်ထဲရောက်တဲ့အခါ အဲဒီနာမည်နဲ့ သိမ်းဆည်းပေးမှာ ဖြစ်ပါတယ်။<br> ဖိုင်အမျိုးအစား Extension .pdf သို့မဟုတ် .jpg စတာတွေကိုပါ ထည့်ရေးပေးရပါမယ်။</p>
+
+<b>ဥပမာ -</b>
+<div style="background-color:lightgray;"><code>
+      &lt;a href=&quot;images/man-ujpg&quot;<mark>download=&quot;man_u_logo.jpg&quot;</mark>&gt;Man-U Logo&lt;/a&gt;
+</code></div>
+
+<b>ရလာဒ် -</b>
+<div style="background-color:lightgray;">
+      <a href="images/man-u.jpg" download="man_u_logo.jpg">Man-U Logo</a>
+</div>
+<br>
+
+<i><b>မှတ်ချက် :</b><br>•ဒေါင်းလုဒ်လုပ်မယ့်ဖိုင်ဟာ ကိုယ့်ရဲ့ Website Server ထဲမှာပဲ ရှိနေရပါမယ် (ဥပမာ - ကိုယ့် Domain က mysite.com ဆိုရင် ဖိုင်ကလည်း [mysite.com/file.pdf](https://mysite.com/file.pdf) ဖြစ်ရပါမယ်)။<br>
+•တခြား Website တစ်ခုခုက ဖိုင်လင့်ခ်ကို လှမ်းချိတ်ပြီး download attribute ထည့်ထားရင် အလုပ်မလုပ်ပါဘူး။ Browser က ၎င်းကို ရိုးရိုးလင့်ခ်အတိုင်းပဲ သဘောထားပြီး ဖိုင်ကို တိုက်ရိုက်ဖွင့်ပြလိုက်မှာ ဖြစ်ပါတယ်။</i>
+<hr>
+<h3><u>G. ပုံတွေကို Link လုပ်ခြင်း</u></h3>
+<p>စာသားတင်မကဘဲ ဓာတ်ပုံတစ်ပုံကို နှိပ်ရင် လင့်ခ်ပွင့်သွားအောင်လည်း လုပ်လို့ရပါတယ်။ &lt;a&gt; tag ကြားထဲမှာ &lt;img&gt; tag ကို ထည့်ရုံပါပဲ။</p>
+<b>ဥပမာ -</b>
+<div style="background-color:lightgray;">
+      <code>
+      &lt;a href=&quot;https://www.manutd.com/en&quot;&gt;<mark>&lt;img src=&quot;images/man-u.jpg&quot; alt=&quot;Man U website Link&quot;&gt;&lt;/img&gt;</mark>&lt;/a&gt;
+</div>
+
+<b>ရလာဒ် -</b>
+<div style="background-color:lightgray;">
+      <a href="https://www.manutd.com/en" target="_blank" rel="noopener noreferrer"><img src="images/man-u.jpg" alt="Man U website Link" width="150" height="150"></img></a>
+</div><br>
+
+<b>---------------2.2 END--------------</b>
+<hr>
+ <a href="2.1 HTML Lists.html">LESSON - 2.1</a>
+ <br><br>
+ <a href="2.3 File Paths.html">LESSON - 2.3</a>
+<hr>
+</body>
+</html>

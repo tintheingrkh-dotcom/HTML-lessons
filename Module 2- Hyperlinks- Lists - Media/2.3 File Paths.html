@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>2.3: File Paths</title>
+      <link rel="icon" href="../Module 1- HTML Fundamentals/images/favicon.png">
+</head>
+<body>
+      <h1><u>2.3: File Paths</u></h1>
+      <p>HTML မှာ File Paths ဆိုတာ Website တစ်ခုထဲမှာရှိတဲ့ တခြား ဖိုင်တွေ (ဥပမာ - ဓာတ်ပုံများ၊ CSS ဖိုင်များ၊ တခြား HTML စာမျက်နှာများ) ကို ချိတ်ဆက်ပေးဖို့ ဖိုင်တည်နေရာလမ်းကြောင်း ညွှန်းပေးတာ ဖြစ်ပါတယ်။
+&lt;img&gt;, &lt;link&gt;, &lt;a&gt;, &lt;script&gt; စတဲ့ tag တွေမှာ ဖိုင်လမ်းကြောင်းကို အဓိက အသုံးပြုကြပါတယ်။
+HTML မှာ File Path (၂) မျိုး ရှိပါတယ် -
+</p>
+      <ul>
+            <li>Relative File Paths (အနီးစပ်ဆုံး ဖိုင်လမ်းကြောင်း)</li>
+            <li>Absolute Path (အပြည့်အစုံ ဖိုင်လမ်းကြောင်း) </li>
+            <li>သတိထားရမည့် အချက်များ</li>
+      </ul>
+      <hr>
+      <h2><u>A. Relative File Paths (အနီးစပ်ဆုံး ဖိုင်လမ်းကြောင်း)</u></h2>
+      <p>မိမိ ရေးနေတဲ့ HTML ဖိုင်တည်ရှိရာ Folder အပေါ် မူတည်ပြီး ဖိုင်လမ်းကြောင်း ညွှန်းတာ ဖြစ်ပါတယ်။ Website တည်ဆောက်တဲ့အခါ ဒါကို အသုံးအများဆုံးပါပဲ။
+အသုံးများတဲ့ သင်္ကေတများနဲ့ ရေးသားပုံ -</p>
+      <ul>
+            <li>./ လက်ရှိဖိုင်တွဲ (Current Directory) ဒီသင်္ကေတက ရှိလည်းရှိ၊ မရှိလည်းရှိ။ ဒါပေမယ့် ရှင်းရှင်းလင်းလင်းဖြစ်အောင် ထည့်ရေးလေ့ရှိတယ်။</li>
+            <li>folder/filename လက်ရှိ ဖိုင်တွဲထဲက နောက်ထပ် ဖိုင်တွဲတစ်ခုထဲမှာ ရှိနေရင်သုံးပါတယ်။</li>
+            <li>../ အထက်ဖိုင်တွဲ (Parent Directory) တစ်ဆင့်အထက်ကို ပြန်တက်ချင်ရင် သုံးတယ်။ နှစ်ဆင့်တက်ချင်ရင် ../../ လို့ရေးတယ်။</li>
+      </ul>
+      <hr>
+      <h2><u>B. Absolute File Paths (အပြည့်အစုံ ဖိုင်လမ်းကြောင်း)</u></h2>
+      <p>ဒါWebsite တစ်ခုခုရဲ့ URL လိပ်စာအပြည့်အစုံ (Web Address) ကို တိုက်ရိုက် ညွှန်းပေးတာ ဖြစ်ပါတယ်။ တခြား Internet ပေါ်က Website တွေမှာရှိတဲ့ ပုံတွေ၊ ဖိုင်တွေကို ယူသုံးချင်တဲ့အခါ သုံးပါတယ်။ https:// နဲ့စတယ်။</p>
+      <b>ဥပမာ -</b>
+      <div style="background-color:lightgray;">
+            <code>
+                  &lt;img src=&quot;<mark>https://www.w3schools.com/images/w3schools_green.jpg</mark>&quot;&gt;
+            </code>
+      </div>
+      <br>
+      <img src="https://www.w3schools.com/images/w3schools_green.jpg">
+      <i><b>သတိပေးချက်</b> – တစ်ခြား Server ပေါ်က ဖိုင်ကို ခေါ်ရင် သူတို့ Server ကျသွားရင် သင့်ပုံပါ ပျက်သွားမယ်။ ဒါကြောင့် ကိုယ်ပိုင် Project ဖိုင်တွေကို ဒီလိုမခေါ်ပါနဲ့။</i>
+      <hr>
+      <h2><u>C. Root-relative Path (/)</u></h2>
+      <p>ဒါက Slash (/) နဲ့စတယ်။ ဒါက လက်ရှိဖိုင်ဘယ်မှာရှိလဲ မကြည့်ဘဲ Website ရဲ့ အမြစ်တွဲ (Root Directory) ကနေ စရှာတယ်။<br>
+ဥပမာ - သင့် Website က www.mywebsite.com မှာရှိရင်၊ /images/photo.jpg ဆိုတာက www.mywebsite.com/images/photo.jpg ကိုညွှန်တယ်။<br>ဒါကိုဘယ်အချိန်သုံးမလဲဆိုတော့ PHP, Python (Backend) လိုမျိုး Server-side ပရိုဂရမ်းမင်းတွေနဲ့ အလုပ်လုပ်တဲ့အခါ သုံးတယ်။ ဒါပေမယ့် လက်ရှိ သင်လေ့လာနေတဲ့ ရိုးရိုး HTML ဖိုင်တွေအတွက် မသုံးဖို့ အကြံပြုတယ် (ဘာလို့လဲဆိုတော့ ကိုယ့် Computer မှာ Local ဖွင့်ရင် အလုပ်မလုပ်လို့ပါ)။ လက်ရှိအဆင့်မှာ ../ နဲ့ ./ ကိုပဲ ကျွမ်းကျင်အောင်လုပ်ပါ။
+</p>
+      <hr>
+      <h2><u>D. သတိထားရမည့် အချက်များ</u></h2> 
+      <ul>
+            <li>Case Sensitivity (စာလုံးအကြီးအသေး) – ဖိုင်တွဲနာမည်က Images ဆိုရင် images လို့ ရေးလို့မရဘူး။ အထူးသဖြင့် Server (Linux) တွေပေါ်မှာ စာလုံးအကြီးအသေးကို အထိခိုက်ဆုံးပါ။ အကုန် lowercase (အသေး) နဲ့ပဲ နာမည်ပေးပါ။</li>
+            <li>Slash (/) နေရာချခြင်း – ဖိုင်တွဲတစ်ခုထဲဆင်းချင်ရင် ရှေ့ကနေ / ထည့်ပါ။ images/profile.jpg (မှန်)၊ imagesprofile.jpg (မှား - ဖိုင်တွဲမပါဘဲ ဖိုင်တစ်ခုတည်းလို့ထင်မယ်)။</li>
+            <li>များလွန်းတဲ့ ../ – သုံးဆင့်၊ လေးဆင့် ပြန်တက်ရင် ကုဒ်တွေ ရှုပ်သွားတတ်တယ်။ ဒါကြောင့် Folder Structure ကို အတတ်နိုင်ဆုံး အနက် (၂) ဆင့် ထက်မပိုအောင် ထားပါ။</li>
+            <li>ဖိုင်နာမည်တွေမှာ နေရာလွတ် (Space) မထည့်ပါနဲ့ – my photo.jpg ဆိုတာထက် my-photo.jpg သို့ my_photo.jpg လို့ ရေးပါ။ Browser တွေ ရှုပ်တတ်တယ်။</li>
+            <li>ဖိုင်တွေကို စနစ်တကျထားပါ – ပုံတွေအတွက် images/၊ CSS အတွက် css/၊ JS အတွက် js/ ဆိုပြီး ခွဲထားပါ။ နောက်ပိုင်း ကြီးမားတဲ့ Project တွေအတွက် အလေ့အကျင့်ကောင်းတစ်ခုပါ။</li>
+      </ul>
+  
+      <b><u>• ဖိုင်ဖွဲ့စည်းပုံ နမူနာ -</u></b>
+      <div style="background-color:lightgray;"><code>
+            <ul>
+                  <li>my-portfolio
+                        <ul>
+                              <li>index.html</li>
+                              <li>about.html</li>
+                              <li>css/
+                                    <ul>
+                                          <li>style.css</li>
+                                    </ul>
+                              </li>
+                              <li>images/
+                                    <ul>
+                                          <li>profile.jpg</li>
+                                          <li>products/
+                                                <ul>
+                                                   <li>phone.jpg</li>   
+                                                </ul>
+                                          </li>
+                                    </ul>
+                              </li>
+                              <li>pages/
+                                    <ul>
+                                          <li>contact.html</li>
+                                    </ul>
+                              </li>
+                        </ul>      
+                  </li>
+            </ul>
+      </code></div>
+      <br>
+      <b>------------2.3 END------------</b>
+      <hr>
+      <a href="2.2 Hyperlinks.html">LESSON-2.2</a>
+      <br><br>
+      <a href="">LESSON-2.4</a>
+      <hr>
+</body>
+</html>
